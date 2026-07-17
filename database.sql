@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS visitors (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  age INT NOT NULL,
+  status TINYINT DEFAULT 0,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO visitors (`name`, age, `status`) VALUES
+('Sara', 23, 1),
+('Ali', 30, 0);
